@@ -1,0 +1,124 @@
+.taskForm {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 0 auto;
+}
+.taskForm #title {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px 0;
+  font-size: 16px;
+  outline: none;
+}
+.taskForm #textArea {
+  outline: none;
+  resize: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.taskForm .createButton {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: green;
+  color: white;
+}
+.taskForm h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+.taskListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.taskItems {
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+  margin: 30px 40px;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+.deleteButton {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: red;
+  color: white;
+  font-size: 16px;
+  width: 70px;
+}
+.changeButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: rgb(7, 126, 126);
+  padding: 10px;
+  width: 70px;
+}
+
+.taskForm .updateButton {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: blueviolet;
+}
+
+.updateButton {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: purple;
+  color: white;
+}
+.taskFormUpdate {
+  border: 1px solid green;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+.taskFormUpdate #title {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px 0;
+  font-size: 16px;
+  outline: none;
+}
+.taskFormUpdate #textArea {
+  outline: none;
+  resize: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin: 10px 0;
+  font-size: 16px;
+}
