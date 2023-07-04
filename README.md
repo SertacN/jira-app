@@ -3,8 +3,14 @@
 <h3>Used React with Vite</h3>
 
 <h3>What was used:</h3>
- React useState, Separate Operator, Ternary operator, Javascript Map and Filter
- 
+
+- React Hook: useState, useEffect
+- Axios
+- JSON Server
+- Separate Operator
+- Ternary Operator
+- Javascript Map and Filter
+
 <h3>Components:</h3>
 
 - TaskAddArea.jsx
@@ -16,6 +22,7 @@
 - Create new task from Task form
 - Added Tasks in task area
 - Can delete and edit task
+- Data keep in db.json
 
 <h3>CSS:</h3>
 <p>
