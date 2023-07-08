@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import TaskContext from "../context/TaskContext";
 
-function TaskAddArea({ createdTask, onUpdate, taskFormUpdate, tasks }) {
+function TaskAddArea({ taskFormUpdate, tasks, onUpdate }) {
+  const { userTask } = useContext(TaskContext);
+
   const [title, setTitle] = useState(tasks ? tasks.title : "");
   const [textArea, setTextArea] = useState(tasks ? tasks.taskDesc : "");
 
@@ -17,7 +20,7 @@ function TaskAddArea({ createdTask, onUpdate, taskFormUpdate, tasks }) {
     if (taskFormUpdate) {
       onUpdate(tasks.id, title, textArea);
     } else {
-      createdTask(title, textArea);
+      userTask(title, textArea);
     }
 
     setTitle("");

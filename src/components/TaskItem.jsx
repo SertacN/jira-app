@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
 import TaskAddArea from "./TaskAddArea";
+import TaskContext from "../context/TaskContext";
 
-function TaskItem({ tasks, onDelete, onUpdate }) {
+function TaskItem({ tasks }) {
+  const { deleteTaskItem, updateTaskItem } = useContext(TaskContext);
+
   const [update, setUpdate] = useState(false);
 
   const handleDelete = () => {
-    onDelete(tasks.id);
+    deleteTaskItem(tasks.id);
   };
   const updateTask = () => {
     setUpdate(true);
   };
   const handleSubmit = (id, updatedTitle, updatedTask) => {
     setUpdate(false);
-    onUpdate(id, updatedTitle, updatedTask);
+    updateTaskItem(id, updatedTitle, updatedTask);
   };
 
   return (

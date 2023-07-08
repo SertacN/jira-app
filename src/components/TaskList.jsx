@@ -1,18 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import TaskItem from "./TaskItem";
+import TaskContext from "../context/TaskContext";
 
-function TaskList({ task, onDelete, onUpdate }) {
+function TaskList() {
+  const { tasks } = useContext(TaskContext);
   return (
     <div className="taskListContainer">
-      {task.map((item, i) => {
-        return (
-          <TaskItem
-            key={i}
-            tasks={item}
-            onDelete={onDelete}
-            onUpdate={onUpdate}
-          />
-        );
+      {tasks.map((item, i) => {
+        return <TaskItem key={i} tasks={item} />;
       })}
     </div>
   );

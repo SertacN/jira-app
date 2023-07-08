@@ -4,7 +4,7 @@
 
 <h3>What was used:</h3>
 
-- React Hook: useState, useEffect
+- React Hook: useState, useEffect, useContext
 - Axios
 - JSON Server
 - Separate Operator
